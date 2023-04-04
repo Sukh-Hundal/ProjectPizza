@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>PizzaStore | Ecommerce website </title>
+  <link rel="stylesheet"  href="stylep.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+  <div class="header">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/logoP.png" width="200px" >
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="">Home</a></li>
+          <li><a href="">Order Now</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Account</a></li>
+        </ul>
+      </nav>
+      <img src="images/carttt-.png" with="30px" height="30px">
+      <img src="images/menuIcon-.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h1>A Little Bit Of<br>Italy To Go!</h1>
+        <p>Pizza for all those who wish they were Italian.<br>We don’t just make your favorite pizza—we can make your favorite pizza into a calzone!</p>
+        <a href="" class="btn">Explore Now &#8594; </a>
+      </div>
+      <div class="col-2">
+        <img src="images/bgbg.png">
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!-----items----->
+  <div class="small-container">
+    <h2 class="title">Menu Items </h2>
+    <div class="row">
+      <div class="col-4">
+        <a href="itemdetails.html"><img src="images/Pizzanew.jpeg" ></a>
+        <a href="itemdetails.html"><h4>New-York Pizza</h4></a>
+        <p>$16.99</p>
+      </div>
+      <div class="col-4">
+        <a href="itemdetails.html"><img src="images/chicago.jpeg" ></a>
+        <a href="itemdetails.html"><h4>Chicago Pizza</h4></a>
+        <p>$18.19</p>
+      </div>
+      <div class="col-4">
+        <a href="itemdetails.html"><img src="images/california.jpeg" ></a>
+        <a href="itemdetails.html"><h4>California Pizza</h4></a>
+        <p>$17.93</p>
+      </div>
+      <div class="col-4">
+        <a href="itemdetails.html"><img src="images/neapolitan.jpeg" ></a>
+        <a href="itemdetails.html"><h4>Neapolitan Pizza</h4></a>
+        <p>$18.92</p>
+      </div>
+    </div>
+    <h2 class="title">Special Items</h2>
+    <div class="row">
+      <div class="col-4">
+        <img src="images/BaconClub Pizza.jpeg" >
+        <h4>BaconClub Pizza</h4>
+        <p>$24.99</p>
+      </div>
+      <div class="col-4">
+        <img src="images/Reuben Pizza.jpeg" >
+        <h4>Reuben Pizza</h4>
+        <p>$21.19</p>
+      </div>
+      <div class="col-4">
+        <img src="images/Cashew Chicken Pizza.jpeg" >
+        <h4>Cashew Chicken Pizza</h4>
+        <p>$25.93</p>
+      </div>
+      <div class="col-4">
+        <img src="images/tomato pie.jpeg" >
+        <h4>Tomato pie</h4>
+        <p>$21.92</p>
+      </div>
+    </div>
+  </div>
+<!---------footer-------->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download our App</h3>
+        <p> Download App for Android and ios mobile phone</p>
+      </div>
+      <div class="footer-col-2">
+        <h3><img src="images/logoP.png" width="125px" ></h3>
+        <p>Our Purpose Is To Give You The Best Taste</p>
+      </div>
+      <div class="footer-col-3">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>Offers</li>
+          <li>Return Policy</li>
+          <li>Queries</li>
+        </ul>>
+      </div>
+      <div class="footer-col-4">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>YouTube</li>
+        </ul>>
+      </div>
+</div>
+<!-----js for toggle menu------>
+<script>
+  var MenuItems=document.getElementById("MenuItems");
+  MenuItems.style.maxHeight="0px";
+  function menutoggle(){
+    if(MenuItems.style.maxHeight=="0px")
+    {
+      MenuItems.style.maxHeight="200px";
+    }
+    else
+    {
+      MenuItems.style.maxHeight="0px";
+    }
+  }
+</script>
+</body>
+</html>
